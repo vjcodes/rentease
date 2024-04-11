@@ -1,0 +1,56 @@
+@import "../../responsive.scss";
+
+.contact{
+    height:calc(100vh - 100px);
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#6eb1c5;
+    @include sm{
+        padding:0rem 1rem;
+    }
+    
+    h2{
+        font-size:3rem;margin-top:1rem;
+    }
+    form{
+        max-width:120rem;text-align:center;
+        .input-box{
+            display:flex;justify-content:space-around;flex-wrap:wrap;
+            @include sm{
+                flex-direction:column;
+            }
+            input{
+                padding:0.8rem 2rem;font-size:1rem;background-color: rgb(227, 240, 241);
+                border-radius: .6rem;margin:.7rem 0;color:rgb(2, 46, 49);width:49%;
+                @include sm{
+                    width:100%;
+                    padding:0.6rem 1rem;
+                }
+            }
+        }
+        textarea{
+            padding:0.8rem 2rem;font-size:1rem;background-color: rgb(227, 240, 241);
+            border-radius: .8rem;margin:.7rem 0;color:rgb(2, 46, 49);resize:none;
+            margin-bottom:1rem;width:100%;
+            &:hover{
+                border-bottom: 4px solid rgb(16, 109, 116);
+            }
+            @include sm{
+                width:100%;
+                margin:0 0;
+                padding:0.6rem 1rem;
+            }
+        }
+        input{
+            padding:0.8rem 2rem;font-size:1rem;background-color: teal;
+            border-radius: .8rem;color:rgb(2, 46, 49);width:49%;border:none;transition:all 0.4s ease;
+            &:hover{
+                border-bottom: 4px solid rgb(11, 82, 87);
+            }
+        }
+    }
+}
+
+

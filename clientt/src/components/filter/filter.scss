@@ -1,0 +1,66 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top:10px;
+
+  h1 {
+    font-weight: 600;
+    color:rgb(18, 95, 114);
+    font-size: 24px;
+    b{
+      font-weight:800;
+    }
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    label {
+      font-size: 10px;
+    }
+
+    input,
+    select {
+      width: 100px;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+  }
+
+  .top {
+    input {
+      width: 100%;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    button {
+      width: 100px;
+      padding: 8px;
+      border-radius:5px;border:transparent;
+      cursor: pointer;
+      background-color: rgb(31, 172, 182);transition:all 0.4s;
+      &:hover{
+        border-bottom:2px solid rgb(34, 150, 158);scale:1.05;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        &:hover{
+          scale:1.05;
+        }
+      }
+    }
+  }
+}

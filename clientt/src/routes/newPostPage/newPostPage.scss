@@ -1,0 +1,91 @@
+@import "../../responsive.scss";
+.newPostPage {
+  height: 100%;
+  display: flex;
+  
+  .formContainer {
+    flex: 3;
+    overflow: scroll;
+    margin-left:30px;
+    margin-top:10px;
+    
+
+    h1{
+      font-size:40px;
+      color:rgb(26, 103, 109);
+    }
+
+    .wrapper {
+      margin: 30px 50px 100px 0px;
+      font-weight:500;
+      color:rgb(67, 125, 129);
+
+      form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .item {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          label {
+          }
+
+          input {
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid gray;
+          }
+
+          select {
+            padding: 19px;
+          }
+
+          &.description {
+            width: 100%;
+            height: 320px;
+
+            .quill > .ql-container > .ql-editor{
+              height: 200px;
+              font-size: 16px;
+            }
+          }
+        }
+        .sendButton {
+          padding:0px 50px;
+          border-radius: 5px;
+          border: none;
+          background-color: teal;
+          color: white;
+          font-weight: bold;font-size:20px;
+          cursor: pointer;
+          transition:all 0.4s;
+          &:hover{
+            border-bottom:4px solid rgb(8, 72, 77);
+          }
+        }
+      }
+    }
+  }
+
+  .sideContainer {
+    flex: 2;
+    background-color: rgb(132, 158, 160);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+}
